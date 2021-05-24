@@ -87,20 +87,3 @@ fn main() -> Result<(), Box<dyn Error>> {
     build_shader("./shaders/compute-shader")?;
     Ok(())
 }
-
-pub struct ShaderConstants;
-
-pub fn fs(constants: &ShaderConstants, frag_coord: Vec2) -> Vec4 {
-    Vec4::default()
-}
-
-#[spirv(fragment)]
-pub fn main_fs(
-    #[spirv(frag_coord)] in_frag_coord: Vec4,
-    #[spirv(push_constant)] constants: &ShaderConstants,
-    output: &mut Vec4,
-) {
-    let frag_coord = vec2(in_frag_coord.x, in_frag_coord.y);
-    *output = fs(constants, frag_coord);
-}
-
