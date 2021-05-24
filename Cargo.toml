@@ -1,0 +1,15 @@
+[package]
+name = "rustgpuemu"
+version = "0.1.0"
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+emu_core = {version="0.1", features=["glsl-compile"]}
+emu_glsl = "0.1"
+zerocopy = "0.5"
+futures = "0.3"
+glam = "0.15"
+spirv-std = {version="0.4.0-alpha.7", path="./rust-gpu/crates/spirv-std/"}
+spirv-builder = {version="0.4.0-alpha.7", path="./rust-gpu/crates/spirv-builder/"}
