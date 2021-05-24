@@ -1,21 +1,21 @@
-use emu_core::prelude::*;
-use emu_glsl::*;
-use spirv_std::macros::spirv;
-use zerocopy::*;
-use glam::{Vec3, Vec4, Vec2, vec2, vec3};
+// use emu_core::prelude::*;
+// use emu_glsl::*;
+// use spirv_std::macros::spirv;
+// use zerocopy::*;
+// use glam::{Vec3, Vec4, Vec2, vec2, vec3};
 use spirv_builder::SpirvBuilder as SpirvCompiler;
 use std::error::Error;
 
 
-#[repr(C)]
-#[derive(AsBytes, FromBytes, Copy, Clone, Default, Debug, GlslStruct)]
-struct Shape {
-    x: u32,
-    y: u32,
-    w: i32,
-    h: i32,
-    r: [i32; 2],
-}
+// #[repr(C)]
+// #[derive(AsBytes, FromBytes, Copy, Clone, Default, Debug, GlslStruct)]
+// struct Shape {
+//     x: u32,
+//     y: u32,
+//     w: i32,
+//     h: i32,
+//     r: [i32; 2],
+// }
 
 // fn main() -> Result<(), Box<dyn std::error::Error>> {
 //     // ensure that a device pool has been initialized
