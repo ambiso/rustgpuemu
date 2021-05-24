@@ -11,5 +11,5 @@ emu_glsl = "0.1"
 zerocopy = "0.5"
 futures = "0.3"
 glam = "0.15"
-spirv-std = {version="0.4.0-alpha.7", path="./rust-gpu/crates/spirv-std/"}
-spirv-builder = {version="0.4.0-alpha.7", path="./rust-gpu/crates/spirv-builder/"}
+spirv-std = { path="./rust-gpu/crates/spirv-std/" }
+spirv-builder = { path="./rust-gpu/crates/spirv-builder/" }
